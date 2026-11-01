@@ -14,7 +14,24 @@ public class PersonalGreeter {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Your code here
+        int currentYear = 2026;
+
+        System.out.println("What's your name?");
+        String name = input.nextLine();
+
+        input.nextLine();
+
+        System.out.println("How old are you?");
+        int age = input.nextInt();
+
+        input.nextLine();
+
+        System.out.println("What's your favorite subject?");
+        String subject = input.nextLine();
+
+        input.nextLine();
+
+        System.out.println("Name: " + name + "\nAge: " + age + "\nFav subject: " + subject + "\nYear turn 100: " + (currentYear - age + 100));
 
         input.close();
     }

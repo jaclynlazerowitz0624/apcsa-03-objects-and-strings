@@ -15,7 +15,24 @@ public class QuizGame {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Your code here
+        System.out.println("Fav color?");
+        String color = input.nextLine();
+
+        input.nextLine();
+
+        System.out.println("Fav number (integer)?");
+        int number = input.nextInt();
+
+        input.nextLine();
+
+        System.out.println("Fav letter?");
+        char letter = input.next().charAt(0);
+
+        input.nextLine();
+
+        System.out.println("Your fav color: " + color);
+        System.out.println("Your fav number (integer): " + number);
+        System.out.println("Your fav letter: " + letter);
 
         input.close();
     }
