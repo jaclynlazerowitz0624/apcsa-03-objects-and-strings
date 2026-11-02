@@ -23,10 +23,32 @@ public class ProjectPrototype {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // My project: [name it here]
-        // What it does: [one sentence]
+        // My project: [Adaptive Optics Project]
+        // What it does: [It takes a user's baseline prescription and the distance of an object to determine how much vision correction is needed, intended for but not limited to ortho-k patients]
+        // Calculation : Correction = Baseline prescription - (1/distance)
 
-        // Your code here
+
+        System.out.println("Baseline prescription:");
+        double prescription = input.nextDouble();
+
+        System.out.println("Distance: (meters)");
+        double meters = input.nextDouble();
+
+        input.nextLine();
+
+        System.out.println("Ortho-k patient? (True or False)");
+        boolean orthoK = input.nextBoolean();
+
+        input.nextLine();
+
+        double correction = (prescription - (1/meters));
+
+        System.out.println("Prescription: " + prescription);
+        System.out.println("Distance: " + meters);
+        System.out.println(orthoK + ", an ortho-k patient");
+        System.out.println("Correction needed: " + correction);
+
+
 
         input.close();
     }
